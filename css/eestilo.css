@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+.encabezado{
+    background: #00092C;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 24px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menuHam{
+    margin-right: 5%;
+}
+
+.logo{
+    width: 5.5%;
+    margin-left: 5%;
+}
+
+.menu{
+    background-color: #FF5F00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5%;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.menu_enc{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu_enc li{
+    margin-inline-start: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+
+.menu_enc li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu_enc li:hover{
+    border-bottom: 3px solid #fff;
+}
+
+.cajas{
+    display: flex;
+    justify-content: center;
+    margin-inline-start: 2%;
+    margin-inline-end: 2%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+
+.divCajas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-inline-start: 40px;
+}
+
+.cajas div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: auto;
+    width: 100%;
+}
+
+.cajas .text-box{
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.text-box .texto{
+    padding: 3%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.cajas div .img{
+    width: 100%;
+}
+
+.caja{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    border: 3.5px solid #00092C;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 8px 13px 17px gray;
+}
+
+
+footer{
+    font-family: 'Raleway', sans-serif;
+    background-color: #FF5F00;
+    padding-top: 30px;
+    padding-bottom: 33px;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+footer h2{
+    font-weight: bolder;
+}
+
+footer .titulo_footer{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.redes a{
+    margin-inline-start: 2%;
+    margin-inline-end: 2%;
+}
+
+@media (min-width: 0px) and (max-width: 480px){
+    .logo{
+        width: 13.5%;
+    }
+
+    .cajas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .divCajas{
+        width: 80%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .datos{
+        width: 100%;
+    }
+
+    .redes{
+        margin-top: 4%;
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .logo{
+        width: 12.5%;
+    }
+
+    .cajas{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 12%;
+    }
+
+    .menu_enc{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .divCajas{
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .datos{
+        width: 100%;
+    }
+
+    .redes{
+        margin-top: 4%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px){
+    .logo{
+        width: 7.5%;
+    }
+
+    .cajas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    
+    .divCajas{
+        width: 40%;
+        margin-top: 5%;
+    }
+    
+    .text-box .texto{
+        width: 100%;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        margin-bottom: 30px;
+        border-bottom: solid 2px #00092C;
+        border-radius: 0 0 5px 5px;
+        background: linear-gradient(rgb(191, 187, 187), white);
+    }
+}
+
+@media (min-width: 1280px){
+    .cajas{
+        margin-top: 13.5%;
+        margin-bottom: 13.5%;
+    }
+}
+
+
+
